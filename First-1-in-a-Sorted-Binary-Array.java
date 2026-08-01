@@ -1,0 +1,25 @@
+/*
+Problem: First 1 in a Sorted Binary Array
+Time Complexity: O(log n)
+Space Complexity: O(1)
+*/
+
+class Solution {
+    public int firstIndex(int arr[]) {
+        
+        int low = 0;
+        int high = arr.length-1;
+        int ans = -1;
+        while(low<=high){
+            int mid = low + (high-low)/2;
+            if(arr[mid]==1){
+                ans = mid;
+                high=mid-1;
+            }else{
+                low=mid+1;
+            }
+        }
+        return ans;
+        
+    }
+}
