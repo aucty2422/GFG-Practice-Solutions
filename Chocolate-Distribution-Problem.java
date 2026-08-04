@@ -1,6 +1,6 @@
 /*
 Problem: Chocolate Distribution Problem
-Time Complexity: O(log n)
+Time Complexity: O(n log n)
 Space Complexity: O(1)
 */
 
