@@ -16,6 +16,7 @@ class Solution {
         }
         return cnt<=k;
     }
+    
     public int findPages(int[] arr, int k) {
         
         if(k>arr.length) return -1;
